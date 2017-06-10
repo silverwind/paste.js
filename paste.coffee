@@ -11,13 +11,13 @@ $.paste = (pasteContainer) ->
   pm._container
 $.fn.pastableNonInputable = ->
   for el in @
-    continue if el._pastable || $(el).is('textarea, input:text, [contenteditable]')
+    continue if el._pastable || $(el).is('textarea, input[type="text"], [contenteditable]')
     Paste.mountNonInputable el
     el._pastable = true
   @
 $.fn.pastableTextarea = ->
   for el in @
-    continue if el._pastable || $(el).is(':not(textarea, input:text)')
+    continue if el._pastable || $(el).is(':not(textarea, input[type="text"])')
     Paste.mountTextarea el
     el._pastable = true
   @
