@@ -60,12 +60,12 @@ createHiddenEditable = ->
     overflow: 'hidden'
 
 isFocusable = (element, hasTabindex) ->
-  # https://github.com/jquery/jquery-ui/blob/master/ui/focusable.js 
-  # 
+  # https://github.com/jquery/jquery-ui/blob/master/ui/focusable.js
+  #
   # * Copyright jQuery Foundation and other contributors
   # * Released under the MIT license.
   # * http://jquery.org/license
-  # 
+  #
   map = undefined
   mapName = undefined
   img = undefined
